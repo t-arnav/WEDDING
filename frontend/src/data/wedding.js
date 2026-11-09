@@ -15,7 +15,7 @@ export const WEDDING = {
         {
             id: "janeu",
             num: "01",
-            name: "Janeu",
+            name: "Yagyopavati",
             tagline: "An auspicious beginning with sacred rituals & blessings",
             date: "02 December 2026",
             venue: "Indira Nagar, Lucknow",
@@ -55,8 +55,8 @@ export const WEDDING = {
     ],
     rsvp: {
         name: "Arnav",
-        phoneDisplay: "+91-XXXXXXXXXX",
-        telHref: "tel:+91-XXXXXXXXXX",
-        whatsappHref: "https://wa.me/91XXXXXXXXXX",
+        phoneDisplay: "+91-9266843215",
+        telHref: "tel:+91-9266843215",
+        whatsappHref: "https://wa.me/919266843215",
     },
 };
