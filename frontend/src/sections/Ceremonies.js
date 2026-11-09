@@ -32,7 +32,7 @@ const CeremonyCard = ({ fn, delay }) => (
             </div>
 
             <a
-                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fn.venue)}`}
+                href={fn.mapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fn.venue)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid={`directions-${fn.id}`}

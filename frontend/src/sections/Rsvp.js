@@ -35,6 +35,10 @@ export default function Rsvp() {
                         {WEDDING.rsvp.phoneDisplay}
                     </p>
 
+                    <p className="mt-2 font-body text-lg text-maroon/85 md:text-xl" data-testid="rsvp-venue">
+                        {WEDDING.rsvp.venue}
+                    </p>
+
                     <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                         <a
                             href={WEDDING.rsvp.telHref}

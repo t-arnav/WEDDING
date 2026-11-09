@@ -29,7 +29,7 @@ export default function Invitation() {
                     <CornerOrnament position="bottom-right" className="bottom-2 right-2" />
 
                     <motion.img
-                        src="/images/ganesh_om.jpg"
+                        src="/images/ganesh-om.jpg"
                         alt="Traditional Ganesha ornament"
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -66,7 +66,14 @@ export default function Invitation() {
                             <MapPin className="mt-1 h-5 w-5 shrink-0 text-rose" />
                             <span>
                                 <span className="block font-semibold">Venue</span>
-                                {WEDDING.invite.venue}
+                                <a
+                                    href={WEDDING.invite.mapsUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-rose hover:underline"
+                                >
+                                    {WEDDING.invite.venue}
+                                </a>
                             </span>
                         </span>
                     </div>
