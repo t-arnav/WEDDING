@@ -7,7 +7,7 @@ export default function MusicToggle() {
     const [buffering, setBuffering] = useState(false);
 
     useEffect(() => {
-        const audio = new Audio("/audio/wedding-song.mp3");
+        const audio = new Audio("/audio/Arijit-Singh-SnapYT.App.mp3");
         audio.loop = true;
         audio.volume = 0.6;
         audio.preload = "auto";
