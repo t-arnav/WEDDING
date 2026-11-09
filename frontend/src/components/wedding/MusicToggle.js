@@ -7,7 +7,7 @@ export default function MusicToggle() {
     const [buffering, setBuffering] = useState(false);
 
     useEffect(() => {
-        const audio = new Audio("/audio/Arijit-Singh-SnapYT.App.mp3");
+        const audio = new Audio("/audio/aajseteri.mp3");
         audio.loop = true;
         audio.volume = 0.6;
         audio.preload = "auto";
@@ -18,10 +18,19 @@ export default function MusicToggle() {
         const onPause = () => setPlaying(false);
         const onWaiting = () => setBuffering(true);
         const onEnded = () => setPlaying(false);
+        const onError = () => {
+            setBuffering(false);
+            setPlaying(false);
+            console.error(
+                "[MusicToggle] Could not load /audio/aajseteri.mp3 — the file must exist at frontend/public/audio/aajseteri.mp3 (exact lowercase name). Open http://localhost:3000/audio/aajseteri.mp3 directly to test it.",
+                audio.error
+            );
+        };
         audio.addEventListener("playing", onPlaying);
         audio.addEventListener("pause", onPause);
         audio.addEventListener("waiting", onWaiting);
         audio.addEventListener("ended", onEnded);
+        audio.addEventListener("error", onError);
         audioRef.current = audio;
         return () => {
             audio.pause();
@@ -35,7 +44,10 @@ export default function MusicToggle() {
         if (!audio) return;
         if (audio.paused) {
             setBuffering(true);
-            audio.play().catch(() => setBuffering(false));
+            audio.play().catch((err) => {
+                setBuffering(false);
+                console.error("[MusicToggle] play() failed:", err.name, err.message);
+            });
         } else {
             audio.pause();
             setBuffering(false);
