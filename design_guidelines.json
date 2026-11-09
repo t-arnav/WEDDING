@@ -1,0 +1,158 @@
+{
+  "theme": {
+    "mode": "light",
+    "style": "Vibrant Traditional Illustrated Indian Wedding",
+    "forbidden_styles": ["dark theme", "minimalist ivory-gold luxury", "corporate look"],
+    "colors": {
+      "background": "#FFF5EE",
+      "background_gradient": "linear-gradient(135deg, #FFF5EE 0%, #FFE8D6 50%, #FFD8C0 100%)",
+      "sunset_orange": "#FA541C",
+      "warm_peach": "#FF9E7D",
+      "saffron_yellow": "#FF9900",
+      "marigold_gold": "#D4AF37",
+      "blush_rose": "#E84A5F",
+      "cream_surface": "#FFFBF4",
+      "deep_crimson": "#800020",
+      "leaf_green": "#2E7D32",
+      "text_primary": "#4A1525",
+      "text_secondary": "#7A3545",
+      "border_gold": "rgba(212, 175, 55, 0.4)"
+    },
+    "typography": {
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=Great+Vibes&family=Outfit:wght@400;500;600&display=swap",
+      "font_family": {
+        "display": "'Cinzel Decorative', 'Rozha One', serif",
+        "serif": "'Cormorant Garamond', Georgia, serif",
+        "script": "'Great Vibes', cursive",
+        "sans": "'Outfit', sans-serif"
+      }
+    }
+  },
+  "layout_and_architecture": {
+    "type": "Single-page scroll with smooth momentum (Lenis)",
+    "responsive_target": "Mobile-first (390px primary viewport optimization)",
+    "max_width": "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
+    "overflow_x": "overflow-x-hidden"
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero Section with Grand Illustrated Mandap",
+      "elements": [
+        "Illustrated Mandap with floral arches, marigold torans, kalash & floating diyas",
+        "Names: Shriya & Kartikey in high-impact Indian display font with gold foil text shadow",
+        "Invitation Tagline: 'Together with their families, invite you to celebrate their union'",
+        "Wedding Date Badge: Saturday, 5 December 2026 | 7:00 PM | Hotel Harmony Inn, Meerut",
+        "Masked line-by-line entrance animation using Framer Motion",
+        "Subtle parallax scroll effect on background floral elements",
+        "Animated scroll down indicator with falling petal motif"
+      ]
+    },
+    {
+      "id": "invitation-panel",
+      "name": "Sacred Invitation Panel",
+      "elements": [
+        "Gold Lord Ganesha illustration with 'Om Shree Ganeshay Namah'",
+        "Traditional family blessing text from Tripathi & Sharma families",
+        "Ornamental cream card background with detailed Indian jali / mandalam border",
+        "Interactive RSVP quick button & Add to Calendar shortcut"
+      ]
+    },
+    {
+      "id": "ceremonies",
+      "name": "Functions & Ceremonies (Timeline & Decorative Cards)",
+      "events": [
+        {
+          "name": "Janeu Sanskar",
+          "date": "Wednesday, 02 December 2026",
+          "time": "10:00 AM Onwards",
+          "venue": "Tripathi House, Lucknow",
+          "illustration_type": "Sacred Thread & Sacred Fire Kund SVG Illustration",
+          "theme_accent": "#E85A71"
+        },
+        {
+          "name": "Haldi, Mehendi & Sangeet",
+          "date": "Thursday, 03 December 2026",
+          "time": "4:00 PM Onwards",
+          "venue": "Tripathi House, Lucknow",
+          "illustration_type": "Marigold & Mehendi Paisley Pattern Illustration",
+          "theme_accent": "#FFA000"
+        },
+        {
+          "name": "Engagement & Wedding Ceremony",
+          "date": "Saturday, 05 December 2026",
+          "time": "7:00 PM Onwards",
+          "venue": "Hotel Harmony Inn, Meerut",
+          "illustration_type": "Mandap Fire Pheras & Floral Garland Illustration",
+          "theme_accent": "#D4AF37"
+        },
+        {
+          "name": "Grand Reception",
+          "date": "Monday, 07 December 2026",
+          "time": "7:30 PM Onwards",
+          "venue": "Indira Gandhi Pratishthan, Lucknow",
+          "illustration_type": "Royal Arch & Chandelier Lantern Illustration",
+          "theme_accent": "#800020"
+        }
+      ]
+    },
+    {
+      "id": "save-the-date",
+      "name": "Save The Date & Live Countdown",
+      "elements": [
+        "Real-time countdown timer to 5 Dec 2026 19:00:00 (Days, Hours, Minutes, Seconds)",
+        "Slow editorial marquee banner: '#ShriyaWedsKartikey • 05 DEC 2026 • MEERUT & LUCKNOW • CELEBRATING LOVE'",
+        "Interactive 'Add to Google Calendar' & 'Apple iCal' buttons"
+      ]
+    },
+    {
+      "id": "rsvp",
+      "name": "RSVP & Warm Closing",
+      "elements": [
+        "Heartfelt closing message from couple & families",
+        "Host RSVP details: Arnav",
+        "Clickable direct Phone link (+91-9876543210)",
+        "Clickable instant WhatsApp message trigger button with pre-filled message",
+        "Interactive RSVP Form with Guest Count, Food Preference, and Blessing Message inputs"
+      ]
+    },
+    {
+      "id": "footer",
+      "name": "Footer with Decorative Floral Pathway",
+      "elements": [
+        "Decorative illustrated floral & diya pathway footer graphics",
+        "Shriya & Kartikey sign-off calligraphy",
+        "Blessing mantra and wedding hashtag (#ShriyaWedsKartikey)",
+        "Back to top smooth scroll button"
+      ]
+    }
+  ],
+  "visual_enhancers": {
+    "floating_petals": "Performant transform-only animated floating rose and marigold petals canvas/CSS element",
+    "background_textures": "Subtle marigold petal overlay & Indian traditional jali lattice patterns",
+    "borders": "Decorative gold foil filigree borders, arch frames, and corner flourishes",
+    "micro_interactions": "Scale on hover for event cards, glow effects on buttons, smooth tab toggles, ripple on click"
+  },
+  "libraries_and_packages": {
+    "smooth_scroll": "@studio-freight/lenis or lenis",
+    "motion": "framer-motion",
+    "icons": "lucide-react, @phosphor-icons/react",
+    "notifications": "sonner"
+  },
+  "image_urls": {
+    "mandap_garlands": "https://images.unsplash.com/photo-1789971649652-ae5dfeeaa7b4?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "wedding_flowers": "https://images.unsplash.com/photo-1607512566084-a20ed291d623?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "floral_decor": "https://images.unsplash.com/photo-1645257120700-2f30f5f48558?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "hanging_garlands": "https://images.unsplash.com/photo-1706086476970-dec8dce61d67?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "couple_wedding": "https://images.unsplash.com/photo-1764286954620-28029fbae9b6?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "couple_traditional": "https://images.pexels.com/photos/30891938/pexels-photo-30891938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "instructions_to_main_agent": [
+    "Load Google Fonts in index.html for Cinzel Decorative, Cormorant Garamond, Great Vibes, and Outfit",
+    "Ensure Lenis smooth scrolling is enabled on the main container",
+    "Build custom SVGs for Ganesha, Mandap Arch, Kalash, Diya, and Ceremony Icons to maintain crispness and theme adherence",
+    "Implement the live countdown calculation targeting 2026-12-05T19:00:00+05:30",
+    "Ensure all interactive buttons, inputs, links, cards, and countdown elements include data-testid attributes (e.g., data-testid='hero-rsvp-btn', data-testid='countdown-days')",
+    "Verify complete responsive design on mobile (390px) without horizontal scrolling"
+  ]
+}
