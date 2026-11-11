@@ -50,7 +50,7 @@ export const WEDDING = {
             num: "04",
             name: "Reception",
             tagline: "An evening of celebration, feasting & festivities",
-            date: "07 December 2026 | 7PM",
+            date: "07 December 2026 | 7 PM",
             venue: "Indira Gandhi Pratishthan, Lucknow",
             mapsUrl: "",
             image: "/images/reception.jpg",
